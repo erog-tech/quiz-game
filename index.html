@@ -5,12 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quiz Game</title>
+    <link rel="stylesheet" type="text/css" href="./Assets/style.css" />
 </head>
-<body>  
-    <button class="submit"><h1>Start</h1> </button>
-    <h1 class="time" style="text-align:center;"></h1>
-    <div id="main"></div>
-
+<body>
+    <header>
+        <div class="large-font">Quiz Game Press Start To Play</div>
+        <button class="submit"><h1>Start</h1> </button>
+    </header>  
+    <main>
+        <section>
+            <div>
+                <textarea id="msg" name="comments"></textarea>
+            </div>
+          <div class="card word-guess">
+            <div class=" large-font wrapper quiz1 ">
+                <div id="quiz">
+                  <h1>Trivia quiz</h1>
+                  
+                  <p class="questions"></p>
+                  
+                  <div class="answers"></div>         
+                  
+                  <div class="checkAnswers">
+                    <h3>Correct?</h3>
+                    <div class="checker">
+            
+                    </div>
+                  </div>
+                </div>
+              </div>  
+            <div class="large-font word-blanks quiz1"></div>
+          </div>
+        </section>
+  
+        <section>
+          <div class="card results">
+            <div class = "win-loss-container">
+            <div>
+            <h2>Correct: <span class="win">0 </span> </h2>
+            <h2>Wrong: <span class="lose">0</span></h2>
+          </div>
+            <!-- <button class="reset-button">Reset Score</button> -->
+        </div>
+        <div class= "card timer">
+            <h1 class="time" style="text-align:center;"></h1>    
+        </div>
+        </section>
+      </main>
     <script src="./Assets/script.js"></script>
 </body>
 </html>
